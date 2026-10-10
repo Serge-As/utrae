@@ -6,6 +6,8 @@
 
 **📘 [Consigne obligatoire : utilisation des Actions publiques gratuites et protection du code privé](docs/GUIDE-CI-PUBLIQUE-PRIVEE.md)** — précise ce qui s'exécute dans UTRAE, ce qui doit rester dans URAE, les tests locaux sur Windows et les interdictions de transmission des secrets. Toute personne contribuant au projet doit lire ce guide avant de lancer une CI ou de publier du code.
 
+**Transfert de propriété prévu :** `SergeDelor/utrae` → **`Serge-As/utrae`** (public). La destination doit être vérifiée après acceptation. [Annonce de transfert et répartition CI GitHub privé / Cloudflare / public](https://github.com/SergeDelor/utrae/issues/2). Le produit Eco existant n'est pas remplacé, et aucune fonctionnalité ne doit être désactivée pour des raisons de quota.
+
 ## Deux dépôts, un seul produit réel
 
 - **`SergeDelor/urae`** — dépôt principal **privé**, renommé depuis `SergeDelor/tontine-platform`. Il héberge le code source existant de l'application Eco, son historique et ses modules. Son infrastructure et sa production ne sont pas remplacées ici.

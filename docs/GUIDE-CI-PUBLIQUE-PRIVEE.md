@@ -1,7 +1,7 @@
 # MODE OPÉRATOIRE OFFICIEL — ECO / URAE / UTRAE
 **Date : 10 octobre 2026 — Règle de fonctionnement commune à tous les contributeurs.**
 
-> **À lire avant chaque PR et chaque workflow.** Le dépôt privé `SergeDelor/urae` conserve **l'application réelle** et son historique. Le dépôt public `SergeDelor/utrae` est un **outil auxiliaire de CI publique et de communication**. **Il ne remplace ni l'application, ni son frontend, ni son backend, ni les données Cloudflare.**
+> **À lire avant chaque PR et chaque workflow.** Le dépôt privé `Serge-As/urae` conserve **l'application réelle** et son historique. Le dépôt public `Serge-As/utrae` est un **outil auxiliaire de CI publique et de communication**. **Il ne remplace ni l'application, ni son frontend, ni son backend, ni les données Cloudflare.**
 
 ## 1. Pourquoi ce système ?
 Le quota de minutes GitHub-hosted standard du dépôt privé URAE est annoncé **épuisé pour le mois**. Ce quota concerne les actions GitHub-hosted lancées depuis les dépôts privés du propriétaire. Déplacer seulement le nom du workflow ou appeler un workflow public depuis un dépôt privé **ne transforme pas ses jobs privés en jobs gratuits**.
@@ -17,9 +17,9 @@ Selon GitHub, les runners **standards GitHub-hosted** des **dépôts publics** s
 
 | Lieu | Autorisé | Interdit |
 | --- | --- | --- |
-| `SergeDelor/urae` (privé) | Développement réel, branches métier, cahiers, secrets gérés hors Git, PR du produit, tests de non-régression | Rendre public, exporter le Git historique, laisser des CI automatiques gaspiller des minutes indisponibles |
+| `Serge-As/urae` (privé) | Développement réel, branches métier, cahiers, secrets gérés hors Git, PR du produit, tests de non-régression | Rendre public, exporter le Git historique, laisser des CI automatiques gaspiller des minutes indisponibles |
 | PC Windows / runner privé de confiance | `npm ci`, `npm run build`, `npm run typecheck`, `npm test`, tests Node/Playwright, validation du SHA | Exposer le runner privé aux PR du dépôt public |
-| `SergeDelor/utrae` (public) | Tests génériques, interfaces et fichiers **explicitement audités**, contrats publics, fixtures synthétiques, HTML de démonstration | Cloner `urae`, jetons à accès privé, codes financiers/rubriques/Discover/cockpits, cahiers, bases réelles, logs, scripts anciens |
+| `Serge-As/utrae` (public) | Tests génériques, interfaces et fichiers **explicitement audités**, contrats publics, fixtures synthétiques, HTML de démonstration | Cloner `urae`, jetons à accès privé, codes financiers/rubriques/Discover/cockpits, cahiers, bases réelles, logs, scripts anciens |
 | Cloudflare actuel (privé) | Exécuter le service Eco existant; staging distinct pour les tests mobiles fonctionnels | Transformer D1/R2 en « coffre » pour un JavaScript secret distribué au navigateur; partager D1 de production avec les tests |
 
 ## 3. Procédure concrète pendant que le quota URAE est à zéro
@@ -48,7 +48,7 @@ Ces commandes exécutées **sur le PC** ne consomment pas les minutes GitHub-hos
 
 ## 4. Interdits absolus : zéro fuite
 
-- **Jamais** de `git clone` / `actions/checkout` de `SergeDelor/urae` dans un workflow public UTRAE, y compris avec PAT, GitHub App, submodule, URL signée ou secret.
+- **Jamais** de `git clone` / `actions/checkout` de `Serge-As/urae` dans un workflow public UTRAE, y compris avec PAT, GitHub App, submodule, URL signée ou secret.
 - **Jamais** de `repository_dispatch`, `workflow_run` ou réutilisation de workflow qui transfère fichiers, artefacts, logs, données, variables ou accès privés vers la CI publique.
 - **Jamais** de push miroir, fork/clone de l'historique URAE dans UTRAE, d'archives `.b64`, `.zip` de sauvegarde, sources maps, dumps D1, captures privées, clés ni jeux de données clients.
 - Les règles de **rubriques**, **Discover**, prêts/intérêts, groupes, identités, permissions, cockpit, tarification, scoring, antifraude, gouvernance et tout module inédit sont **privées par défaut**; toute publication nécessite une revue explicite des sources ET du bundle final.

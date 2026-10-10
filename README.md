@@ -2,16 +2,16 @@
 
 > **Le développement d'Eco se poursuit sur l'application existante. Aucun redémarrage à zéro, nouveau frontend ou nouveau backend n'est prévu par cette annonce.**
 
-📢 **[Annonce officielle — nouvelles adresses et organisation du développement](https://github.com/SergeDelor/utrae/issues/1)**
+📢 **[Annonce officielle — nouvelles adresses et organisation du développement](https://github.com/Serge-As/utrae/issues/1)**
 
 **📘 [Consigne obligatoire : utilisation des Actions publiques gratuites et protection du code privé](docs/GUIDE-CI-PUBLIQUE-PRIVEE.md)** — précise ce qui s'exécute dans UTRAE, ce qui doit rester dans URAE, les tests locaux sur Windows et les interdictions de transmission des secrets. Toute personne contribuant au projet doit lire ce guide avant de lancer une CI ou de publier du code.
 
-**Transfert de propriété prévu :** `SergeDelor/utrae` → **`Serge-As/utrae`** (public). La destination doit être vérifiée après acceptation. [Annonce de transfert et répartition CI GitHub privé / Cloudflare / public](https://github.com/SergeDelor/utrae/issues/2). Le produit Eco existant n'est pas remplacé, et aucune fonctionnalité ne doit être désactivée pour des raisons de quota.
+**Transfert de propriété prévu :** `Serge-As/utrae` → **`Serge-As/utrae`** (public). La destination doit être vérifiée après acceptation. [Annonce de transfert et répartition CI GitHub privé / Cloudflare / public](https://github.com/Serge-As/utrae/issues/2). Le produit Eco existant n'est pas remplacé, et aucune fonctionnalité ne doit être désactivée pour des raisons de quota.
 
 ## Deux dépôts, un seul produit réel
 
-- **`SergeDelor/urae`** — dépôt principal **privé**, renommé depuis `SergeDelor/tontine-platform`. Il héberge le code source existant de l'application Eco, son historique et ses modules. Son infrastructure et sa production ne sont pas remplacées ici.
-- **`SergeDelor/utrae`** — ce dépôt **public**, initialisé avec un historique indépendant. Il sert actuellement de vitrine de qualification et de tests synthétiques sans code privé.
+- **`Serge-As/urae`** — dépôt principal **privé**, renommé depuis `SergeDelor/tontine-platform`. Il héberge le code source existant de l'application Eco, son historique et ses modules. Son infrastructure et sa production ne sont pas remplacées ici.
+- **`Serge-As/utrae`** — ce dépôt **public**, initialisé avec un historique indépendant. Il sert actuellement de vitrine de qualification et de tests synthétiques sans code privé.
 
 ## État du dépôt public
 

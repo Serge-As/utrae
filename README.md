@@ -6,6 +6,8 @@
 
 **📘 [Consigne obligatoire : utilisation des Actions publiques gratuites et protection du code privé](docs/GUIDE-CI-PUBLIQUE-PRIVEE.md)** — précise ce qui s'exécute dans UTRAE, ce qui doit rester dans URAE, les tests locaux sur Windows et les interdictions de transmission des secrets. Toute personne contribuant au projet doit lire ce guide avant de lancer une CI ou de publier du code.
 
+**Règle du 24 octobre 2026 : aucune donnée sensible ou confidentielle dans ce dépôt public.** Lire [AGENTS.md](AGENTS.md) et la [procédure de confidentialité et d'efficacité](docs/REPOSITORY-EFFICIENCY.md). Privilégier UTRAE pour le travail publiable et les tests synthétiques, réduire les interactions inutiles avec URAE privé et conserver tous les contrôles nécessaires du produit. Activer la protection locale avant push : `git config core.hooksPath .githooks`.
+
 **Transfert de propriété prévu :** `Serge-As/utrae` → **`Serge-As/utrae`** (public). La destination doit être vérifiée après acceptation. [Annonce de transfert et répartition CI GitHub privé / Cloudflare / public](https://github.com/Serge-As/utrae/issues/2). Le produit Eco existant n'est pas remplacé, et aucune fonctionnalité ne doit être désactivée pour des raisons de quota.
 
 ## Deux dépôts, un seul produit réel

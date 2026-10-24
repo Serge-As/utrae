@@ -1,0 +1,3 @@
+#!/bin/sh
+# Local check before any public push; also inspects intermediate commits.
+exec node scripts/publication-guard.mjs --pre-push "$2"

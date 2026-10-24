@@ -1,6 +1,8 @@
 # MODE OPÉRATOIRE OFFICIEL — ECO / URAE / UTRAE
 **Date : 10 octobre 2026 — Règle de fonctionnement commune à tous les contributeurs.**
 
+**Complément obligatoire du 24 octobre 2026 :** [confidentialité et efficacité des dépôts](REPOSITORY-EFFICIENCY.md) et [consignes des contributeurs](../AGENTS.md). Aucune donnée sensible ou confidentielle dans UTRAE public ; maximiser son usage pour les seuls contenus explicitement publics. La revue du contenu et le garde local de publication précèdent chaque push. Les constats de quota ci-dessous sont historiques et ne décrivent pas un solde actuel.
+
 > **À lire avant chaque PR et chaque workflow.** Le dépôt privé `Serge-As/urae` conserve **l'application réelle** et son historique. Le dépôt public `Serge-As/utrae` est un **outil auxiliaire de CI publique et de communication**. **Il ne remplace ni l'application, ni son frontend, ni son backend, ni les données Cloudflare.**
 
 ## 1. Pourquoi ce système ?
